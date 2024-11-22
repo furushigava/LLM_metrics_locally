@@ -1,0 +1,161 @@
+'''
+Полный запуск:
+Total input tokens: 1394670
+Total output tokens: 250000
+
+Запуск на проверку (10 строк одной БД):
+Total input tokens: 27341
+Total output tokens: 5000
+'''
+Замечание:
+1. Если возвращается ERROR METHOD CHOICE надо это обрабатывать и что-то с этим делать
+2. --- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\xe9' in position 250: character maps to <undefined>
+Call stack:
+  File "calc_metrics_our_project.py", line 297, in <module>
+    metrics = Metrics_Calculate_OUR(model,dataset)
+  File "calc_metrics_our_project.py", line 45, in __init__
+    self.QNLI_table_result = self.calc_QNLI_results()
+  File "calc_metrics_our_project.py", line 232, in calc_QNLI_results
+    QNLI_results_testrun = self.data.QNLI.apply(lambda row: self.get_results(row['question / sentence'], row['raw query'], prompt_modify_need=True), axis=1)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\frame.py", line 9558, in apply
+    return op.apply().__finalize__(self, method="apply")
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\apply.py", line 741, in apply
+    return self.apply_standard()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\apply.py", line 868, in apply_standard
+    results, res_index = self.apply_series_generator()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\apply.py", line 884, in apply_series_generator
+    results[i] = self.f(v)
+  File "calc_metrics_our_project.py", line 232, in <lambda>
+    QNLI_results_testrun = self.data.QNLI.apply(lambda row: self.get_results(row['question / sentence'], row['raw query'], prompt_modify_need=True), axis=1)
+  File "calc_metrics_our_project.py", line 148, in get_results
+    logger.info(f"[MAIN] Start system_prompt: {system_prompt};;;;Prompt updating: {prompt_now};;;;Task: {text};;;;Answer received: {result}")
+Message: "[MAIN] Start system_prompt: Does the sentence contain an answer to the corresponding question?;;;;Prompt updating: ERROR METHOD SELECTED;;;;Task: Question: What did Valery Giscard d'Estaing have erected? Sentence: Valéry Giscard d'Estaing began the Musée d'Orsay (1986); President François Mitterrand, in power for 14 years, built the Opéra Bastille (1985-1989), the Bibliothèque nationale de France (1996), the Arche de la Défense (1985-1989), and the Louvre Pyramid with its underground courtyard (1983-1989); Jacques Chirac (2006), the Musée du quai Branly.;;;;Answer received: Simple string"
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\xe9' in position 301: character maps to <undefined>
+Call stack:
+  File "calc_metrics_our_project.py", line 297, in <module>
+    metrics = Metrics_Calculate_OUR(model,dataset)
+  File "calc_metrics_our_project.py", line 45, in __init__
+    self.QNLI_table_result = self.calc_QNLI_results()
+  File "calc_metrics_our_project.py", line 232, in calc_QNLI_results
+    QNLI_results_testrun = self.data.QNLI.apply(lambda row: self.get_results(row['question / sentence'], row['raw query'], prompt_modify_need=True), axis=1)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\frame.py", line 9558, in apply
+    return op.apply().__finalize__(self, method="apply")
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\apply.py", line 741, in apply
+    return self.apply_standard()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\apply.py", line 868, in apply_standard
+    results, res_index = self.apply_series_generator()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\apply.py", line 884, in apply_series_generator
+    results[i] = self.f(v)
+  File "calc_metrics_our_project.py", line 232, in <lambda>
+    QNLI_results_testrun = self.data.QNLI.apply(lambda row: self.get_results(row['question / sentence'], row['raw query'], prompt_modify_need=True), axis=1)
+  File "calc_metrics_our_project.py", line 148, in get_results
+    logger.info(f"[MAIN] Start system_prompt: {system_prompt};;;;Prompt updating: {prompt_now};;;;Task: {text};;;;Answer received: {result}")
+Message: '[MAIN] Start system_prompt: Does the question entail the sentence?;;;;Prompt updating: ERROR METHOD SELECTED;;;;Task: Question: Which former president of Def Jam called Beyonce the greatest entertainer alive? Sentence: According to Barbara Ellen of The Guardian Beyoncé is the most in-charge female artist she\'s seen onstage, while Alice Jones of The Independent wrote she "takes her role as entertainer so seriously she\'s almost too good.";;;;Answer received: Simple string'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 423-425: character maps to <undefined>
+Call stack:
+  File "calc_metrics_our_project.py", line 297, in <module>
+    metrics = Metrics_Calculate_OUR(model,dataset)
+  File "calc_metrics_our_project.py", line 45, in __init__
+    self.QNLI_table_result = self.calc_QNLI_results()
+  File "calc_metrics_our_project.py", line 232, in calc_QNLI_results
+    QNLI_results_testrun = self.data.QNLI.apply(lambda row: self.get_results(row['question / sentence'], row['raw query'], prompt_modify_need=True), axis=1)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\frame.py", line 9558, in apply
+    return op.apply().__finalize__(self, method="apply")
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\apply.py", line 741, in apply
+    return self.apply_standard()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\apply.py", line 868, in apply_standard
+    results, res_index = self.apply_series_generator()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\apply.py", line 884, in apply_series_generator
+    results[i] = self.f(v)
+  File "calc_metrics_our_project.py", line 232, in <lambda>
+    QNLI_results_testrun = self.data.QNLI.apply(lambda row: self.get_results(row['question / sentence'], row['raw query'], prompt_modify_need=True), axis=1)
+  File "calc_metrics_our_project.py", line 148, in get_results
+    logger.info(f"[MAIN] Start system_prompt: {system_prompt};;;;Prompt updating: {prompt_now};;;;Task: {text};;;;Answer received: {result}")
+Message: '[MAIN] Start system_prompt: Is there information in the context sentence that you can use to answer the question?;;;;Prompt updating: ERROR METHOD SELECTED;;;;Task: Question: What did researcher Geng Qingguo say was sent to the State Seismological Bureau? Sentence: Malaysia-based Yazhou Zhoukan conducted an interview with former researcher at the China Seismological Bureau Geng Qingguo (耿庆国), in which Geng claimed that a confidential written report was sent to the State Seismological Bureau on April 30, 2008, warning about the possible occurrence of a significant earthquake in Ngawa Prefecture region of Sichuan around May 8, with a range of 10 days before or after the quake.;;;;Answer received: Simple string'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 341-342: character maps to <undefined>
+Call stack:
+  File "calc_metrics_our_project.py", line 297, in <module>
+    metrics = Metrics_Calculate_OUR(model,dataset)
+  File "calc_metrics_our_project.py", line 45, in __init__
+    self.QNLI_table_result = self.calc_QNLI_results()
+  File "calc_metrics_our_project.py", line 232, in calc_QNLI_results
+    QNLI_results_testrun = self.data.QNLI.apply(lambda row: self.get_results(row['question / sentence'], row['raw query'], prompt_modify_need=True), axis=1)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\frame.py", line 9558, in apply
+    return op.apply().__finalize__(self, method="apply")
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\apply.py", line 741, in apply
+    return self.apply_standard()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\apply.py", line 868, in apply_standard
+    results, res_index = self.apply_series_generator()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\apply.py", line 884, in apply_series_generator
+    results[i] = self.f(v)
+  File "calc_metrics_our_project.py", line 232, in <lambda>
+    QNLI_results_testrun = self.data.QNLI.apply(lambda row: self.get_results(row['question / sentence'], row['raw query'], prompt_modify_need=True), axis=1)
+  File "calc_metrics_our_project.py", line 148, in get_results
+    logger.info(f"[MAIN] Start system_prompt: {system_prompt};;;;Prompt updating: {prompt_now};;;;Task: {text};;;;Answer received: {result}")
+Message: '[MAIN] Start system_prompt: Is it possible to answer the question with this sentence?;;;;Prompt updating: ERROR METHOD SELECTED;;;;Task: Question: What can the Western Han dynasty also be called? Sentence: The era from his reign until the fall of Han is known as the Eastern Han dynasty (simplified Chinese: 东汉; traditional Chinese: 東漢;;;;;Answer received: Simple string'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py", line 1088, in emit
+    stream.write(msg + self.terminator)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 279-288: character maps to <undefined>
+Call stack:
+  File "calc_metrics_our_project.py", line 297, in <module>
+    metrics = Metrics_Calculate_OUR(model,dataset)
+  File "calc_metrics_our_project.py", line 45, in __init__
+    self.QNLI_table_result = self.calc_QNLI_results()
+  File "calc_metrics_our_project.py", line 232, in calc_QNLI_results
+    QNLI_results_testrun = self.data.QNLI.apply(lambda row: self.get_results(row['question / sentence'], row['raw query'], prompt_modify_need=True), axis=1)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\frame.py", line 9558, in apply
+    return op.apply().__finalize__(self, method="apply")
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\apply.py", line 741, in apply
+    return self.apply_standard()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\apply.py", line 868, in apply_standard
+    results, res_index = self.apply_series_generator()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python38\lib\site-packages\pandas\core\apply.py", line 884, in apply_series_generator
+    results[i] = self.f(v)
+  File "calc_metrics_our_project.py", line 232, in <lambda>
+    QNLI_results_testrun = self.data.QNLI.apply(lambda row: self.get_results(row['question / sentence'], row['raw query'], prompt_modify_need=True), axis=1)
+  File "calc_metrics_our_project.py", line 148, in get_results
+    logger.info(f"[MAIN] Start system_prompt: {system_prompt};;;;Prompt updating: {prompt_now};;;;Task: {text};;;;Answer received: {result}")
+Message: '[MAIN] Start system_prompt: Is it possible to answer the question with this sentence?;;;;Prompt updating: ERROR METHOD SELECTED;;;;Task: Question: Who did Hayk defeat? Sentence: Armenians in the diaspora informally refer to them as Hayastantsis (Հայաստանցի), meaning those that are from Armenia (that is, those born and raised in Armenia).;;;;Answer received: Simple string'
+Arguments: ()
+
+1. dataframe (logger)
+2. обработчик всех возможны ошибок
+3. перемешать для проверки
+
+1. Выровнять dataset, чтобы было одинакое кол-во True/False
+2. Исправить unify_the_output в metrics_out_project
+3. Проверить, как он подставляет запрос -> logging
+4. Свой choise method modify тк он неправильно выбирает часто (68%)
+7. Проверить unify_the_output . JSON(?)

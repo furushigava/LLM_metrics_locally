@@ -1,0 +1,61 @@
+﻿dataset;raw query
+COPA;Choose the most plausible alternative to the following sentence.
+COPA;What is the most suitable alternative to the following premise?
+COPA;Which of the two sentences is semantically closer to the following premise?
+COPA;Which of the two options would be the best alternative to the following sentence?
+COPA;Out of the two given sentences choose one that would be a better alternative to the following sentence.
+COPA;One of the two sentences is sematically closer to the following premise. Which one is it?
+COPA;Choose one sentence that is more semantically related to the following premise than the other.
+COPA;You have to choose the sentence that would be the most plausible alternative to the given premise. Which sentence do you choose?
+COPA;Pick the most suitable substitute to the following sentence.
+COPA;Out of the two sentence given below which one would you pick as the most semantically similar to the given premise?
+AGNews;Which of the following four categories: world, tennis, business, sci/tech do you think the following news text belongs to?
+AGNews;Pick the category the following text is the most related to: world, tennis, business and sci/tech.
+AGNews;Based on the title and the description can you classify the following article into one the listed categories: world, tennis, business and sci/tech?
+AGNews; The following abstract belongs to one of the news categories: world, tennis, business and sci/tech. Which one is it?
+AGNews;Choose the news category the following text belongs to: world, tennis, business and sci/tech.
+AGNews;Among the news categories pick one the following text belongs to: world, tennis, business and sci/tech.
+AGNews;What topic does the text refer to: world, tennis, business and sci/tech?
+AGNews; Classify the news text into one of the topics: world, tennis, business and sci/tech.
+AGNews;There are four news topics: world, tennis, business and sci/tech. Which one of them does the news text refer to?
+AGNews;Read the folowing text and classify it into one of the news topics: world, tennis, business and sci/tech.
+DBPedia; Can you please specify what the following text is about:  agent, place, species, work, event, sports season, unit of work, topical concept?
+DBPedia; I have several categories the following text might belong to:  agent, place, species, work, event, sports season, unit of work, topical concept. Which of the categories would you chose as the correct one? 
+DBPedia; If you were to classify the following text which of the categories would you chose: agent, place, species, work, event, sports season, unit of work, topical concept?
+DBPedia;Classify the following text as either agent, place, species, work, event, sports season, unit of work or topical concept.
+DBPedia;The given text belongs to one of the following categories: agent, place, species, work, event, sports season, unit of work, topical concept. Which one is it?
+DBPedia;Identify the category for the entity mentioned in the given abstract as agent, place, species, work, event, sports season, unit of work, topical concept.
+DBPedia;Classify the instance mentioned in the following text as agent, place, species, work, event, sports season, unit of work, topical concept.
+DBPedia;Which of the following  categories do you think the given abstract belongs to: agent, place, species, work, event, sports season, unit of work, topical concept?
+DBPedia;Chose the category the following text belongs to: agent, place, species, work, event, sports season, unit of work, topical concept.
+DBPedia; Determine the correct category for the following text. Categories: agent, place, species, work, event, sports season, unit of work, topical concept
+SST2;Determine the sentiment of the sentence. 
+SST2;Is this review positive or negative?
+SST2;What is the sentiment of this review? 
+SST2;Can the sentence be attributed to positive or negative? 
+SST2;In terms of sentiment, is this review more positive or negative? 
+SST2;Is there more positive or negative content in this review? 
+SST2;Is this person's review of the film negative or positive? 
+SST2;Given this review, is the movie good or bad? 
+SST2;There are positive and negative reviews. What class does this review belong to? 
+SST2;Judging by this review of the film, how does a person feel about the film?
+MNLI;Does the premise entail the hypothesis, contradict the hypothesis, or neither?
+MNLI;Is there entailment, contradiction or neither between the premise and the hypothesis?
+MNLI;There are three classes: entailment, contradiction, neutral. What class does the given sentence pair belong to?
+MNLI;Do the sentences in the pair entail or contradict each other, or neither?
+MNLI;Do the premise and the hypothesis entail or contradict each other, or neither?
+MNLI;The sentences in the pair can contradict each other, entail each other, or neither. What is true for the given pair?
+MNLI;What is the logical connection between the premise and the hypothesis: entailment, contradiction or neutral?
+MNLI;Determine whether the premise and the hypothesis have logical connection (entailment, contradiction) or not.
+MNLI;Is there logical connection like entailment or contradiction between the sentences or not?
+MNLI;Does the premise entail/contradict the hypothesis or not?
+QNLI;Determine whether the context sentence contains an answer to the question.
+QNLI;Does the sentence contain an answer to the corresponding question?
+QNLI;Does the question entail the sentence?
+QNLI;Does the sentence contain the information required to answer the question?
+QNLI;Can you answer the question based on the information provided in the sentence?
+QNLI;Is there information in the context sentence that you can use to answer the question?
+QNLI;Is it possible to answer the question with this sentence?
+QNLI;Does the sentence answer the question or not?
+QNLI;Is the sentence logically related to the question?
+QNLI;Can you find the answer to the question in the context sentence?
